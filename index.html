@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+
+<body>
+
+
+    <div class="firstSection d-flex justify-content-center align-items-center mt-5 container">
+        <div class="card">
+            <div class="card-header d-flex align-items-center justify-content-center">
+
+                <img src="https://cdn-icons-png.flaticon.com/128/727/727399.png" height="50" alt="" srcset="">
+                <div class="ms-2">
+                    <div class="d-flex align-items-center gap-2">
+                        <p class="mb-0 fw-bold" id="UserDisplayName"></p>
+                        <img src="https://cdn-icons-png.flaticon.com/128/8358/8358886.png" height="15" alt="" srcset="">
+                    </div>
+                    <p class="fs-6 mb-0" id="address"> </p>
+
+
+                </div>
+
+                <div class="dots ms-auto">
+                    <img src="https://cdn-icons-png.flaticon.com/128/15059/15059127.png" height="25" alt="" srcset="">
+                </div>
+            </div>
+
+
+
+
+
+
+
+            <img src="https://th.bing.com/th/id/OIP.fUjMIljIXFm7Q5gOyE_EwQHaFL?w=254&h=180&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3"
+                class="card-img-top" alt="...">
+            <div class="card-body">
+                <div class="iconSection d-flex align-items-center">
+                    <div class="leftSideIcon d-flex gap-3">
+                        <img src="https://cdn-icons-png.flaticon.com/128/1077/1077035.png" height="25" alt="" srcset="">
+                        <img src="https://cdn-icons-png.flaticon.com/128/3114/3114810.png" height="25" alt="" srcset="">
+                        <img src="https://cdn-icons-png.flaticon.com/128/2550/2550207.png" height="25" alt="" srcset="">
+                    </div>
+                    <div class="rightSideIcon ms-auto">
+                        <img src="https://cdn-icons-png.flaticon.com/128/5662/5662990.png" height="25" alt="" srcset="">
+                    </div>
+                </div>
+                <div class="card-text">
+                    <div class="likes mt-2">
+                        <p>1244 likes</p>
+                    </div>
+                    <div class="info">
+                        <p id="commentDisplay"></p>
+                    </div>
+                    <div class="comments">
+                        <p>View all 1,234 comments</p>
+                    </div>
+
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="secondSection container">
+            <div class="firstRow d-flex justify-content-center align-items-center gap-3">
+                <div class="col-md-4">
+                    <div class="form-floating">
+                        <select class="form-select" id="theme" required>
+                            <option selected disabled value="">Light</option>
+                            <option>Dark</option>
+                        </select>
+                        <div class="invalid-feedback">
+                            Please select a valid state.
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="form-floating">
+                        <input type="text" class="form-control" id="UserNameInput" value="Manish Zala"
+                            aria-describedby="inputGroupPrepend" required>
+                        <label for="UserNameInput">Username</label>
+                    </div>
+
+
+                </div>
+
+            </div>
+
+            <div class="SecondRow d-flex justify-content-center align-items-center gap-3 mt-2">
+                <div class="col-md-4">
+                    <div class="form-floating">
+                        <input type="text" class="form-control" id="discription" value="New York,USA"
+                            placeholder="Password">
+                        <label for="discription">Discription</label>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="form-floating">
+                        <input type="date" class="form-control" id="postDate" placeholder="Password">
+                        <label for="postDate">Post Date</label>
+                    </div>
+                </div>
+            </div>
+            <div class="ThirdRow d-flex justify-content-center align-items-center gap-3 mt-2">
+                <div class="col-md-4">
+                    <div class="form-floating mb-3">
+                        <input type="file" class="form-control" id="floatingInput" placeholder="">
+                        <!-- <img src="https://cdn-icons-png.flaticon.com/128/73/73581.png" height="25" for="floatingInput" alt="" srcset=""> -->
+                        <label for="floatingInput">Avatar</label>
+                    </div>
+
+                </div>
+                <div class="col-md-4 mb-0">
+                    <div class="form-floating">
+                        <input type="file" class="form-control" id="floatingPassword" placeholder="Password">
+                        <label for="floatingPassword">Post Image</label>
+                    </div>
+                </div>
+            </div>
+            <div class="fifthRow d-flex justify-content-center align-items-center">
+                <div class="col-md-8">
+
+
+                    <div class="form-floating mb-3">
+                        <textarea type="text" class="form-control" id="PostText"  placeholder="name@example.com"></textarea>
+                        <label for="PostText">Post Text</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <script src="script.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+            crossorigin="anonymous"></script>
+</body>
+
+</html>

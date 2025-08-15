@@ -1,0 +1,48 @@
+.addressText{
+    font-size: 10px;
+}
+#PostText{
+   
+    min-height: 120px;
+    border-radius: 6px;
+    resize: vertical;
+    box-sizing: border-box;
+}
+.card{
+    width:34rem;
+}
+
+@media (max-width:481px){
+    .firstSection{
+        display: flex;
+        flex-direction: column;
+    }
+    .card{
+        width:100%;
+    }
+    .secondSection{
+        width:100%;
+        margin-top: 50px;
+    }
+    #theme{
+        width: 150px;
+    }
+   input{
+        width:100%;
+    }
+    #PostText{
+        width:340px;
+        max-width: 100%;
+    }
+
+}
+@media (max-width:867px) and (min-width:481px){
+    .secondSection{
+        width:100%;
+    }
+      .firstSection{
+        display: flex;
+        flex-direction: column;
+        gap:40px;
+    }
+}
