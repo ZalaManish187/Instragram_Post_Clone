@@ -1,16 +1,61 @@
+
 .addressText{
     font-size: 10px;
 }
-#PostText{
-   
-    min-height: 120px;
-    border-radius: 6px;
-    resize: vertical;
-    box-sizing: border-box;
-}
+
 .card{
     width:34rem;
 }
+#heart{
+    font-size: 25px;
+}
+.likeChecked{
+      width: 25px;
+  height: 25px;
+  cursor: pointer;
+}
+#AvatarDisplay{
+  border-radius: 50%;
+  width:50px;
+  height:50px;
+
+    
+   
+}
+.border{
+    border:1px solid red;
+}
+ #imgDisplay{
+        position: relative;
+    }
+    #tageIcon{
+         position: absolute;
+           bottom:235px;
+           margin-left: 25px;
+           
+            color: white;
+            font-size: 20px;
+            background: rgba(0, 0, 0, 0.5); /* transparent dark background */
+            padding: 8px;
+            border-radius: 50%;
+            cursor: pointer;
+            transition: background 0.3s;
+    }
+    #checkText{
+        font-size: 20px;
+         white-space: normal; /* Mobile me text wrap ho sake */
+    word-break: break-word;
+    }
+    
+    .firstRow , .SecondRow , .ThirdRow{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .sixthRow{
+        margin-inline-start: 150px;
+    }
+ 
+    
 
 @media (max-width:481px){
     .firstSection{
@@ -20,20 +65,36 @@
     .card{
         width:100%;
     }
-    .secondSection{
+    .secondSection {
         width:100%;
         margin-top: 50px;
     }
-    #theme{
-        width: 150px;
-    }
+   
+    
    input{
         width:100%;
     }
-    #PostText{
-        width:340px;
-        max-width: 100%;
+   
+       #optionCount{
+        width:100%;
     }
+    .fourthRow input{
+        width:100%;
+    }
+   .fifthRow .d-flex {
+    text-align: right;
+    flex-wrap: wrap;
+}
+   #checkText{
+    font-size: 20px;
+    
+   }
+   .sixthRow{
+    margin-left: 0;
+    margin-right: 0;
+   }
+   
+ 
 
 }
 @media (max-width:867px) and (min-width:481px){
@@ -46,3 +107,30 @@
         gap:40px;
     }
 }
+/* iPad Portrait & Landscape (768px - 1024px) */
+@media (min-width: 768px) and (max-width: 1366px) {
+
+    .card {
+        width: 90%;
+    }
+
+    #checkText {
+        font-size: 18px;
+    }
+
+    .sixthRow .col-md-6 {
+        justify-content: flex-start !important;
+        display: flex;
+    }
+
+    .likeChecked {
+        width: 22px;
+        height: 22px;
+    }
+
+    .sixthRow .row {
+        gap: 10px;
+    }
+}
+
+
