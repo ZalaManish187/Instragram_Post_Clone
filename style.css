@@ -1,136 +1,214 @@
+.firstSection {
+    margin-top: 50px;
+}
 
-.addressText{
+.addressText {
     font-size: 10px;
 }
 
-.card{
-    width:34rem;
+.card {
+    width: 34rem;
+    border-radius: 10px;
+    position: relative;
 }
-#heart{
+
+#heart {
     font-size: 25px;
 }
-.likeChecked{
-      width: 25px;
-  height: 25px;
-  cursor: pointer;
-}
-#AvatarDisplay{
-  border-radius: 50%;
-  width:50px;
-  height:50px;
 
-    
-   
+#comment {
+    font-size: 25px;
 }
-.border{
-    border:1px solid red;
+
+#plane {
+    font-size: 25px;
 }
- #imgDisplay{
-        position: relative;
-    }
-    #tageIcon{
-         position: absolute;
-           bottom:235px;
-           margin-left: 25px;
-           
-            color: white;
-            font-size: 20px;
-            background: rgba(0, 0, 0, 0.5); /* transparent dark background */
-            padding: 8px;
-            border-radius: 50%;
-            cursor: pointer;
-            transition: background 0.3s;
-    }
-    #checkText{
-        font-size: 20px;
-         white-space: normal; /* Mobile me text wrap ho sake */
+
+#bookmark {
+    font-size: 25px;
+}
+
+.likeChecked {
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+}
+
+#AvatarDisplay {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+
+
+
+}
+
+.border {
+    border: 1px solid red;
+}
+
+.image-container {
+    position: relative;
+    width: 100%;
+}
+
+#imgDisplay {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.rightAerrow {
+    position: absolute;
+    bottom: 140px;
+    left: 330px;
+    font-size: 25px;
+    color: #fff;
+}
+
+#tageIcon {
+    position: absolute;
+    bottom: 10px;
+    left: 20px;
+    color: white;
+    font-size: 20px;
+    padding: 8px;
+    border-radius: 50%;
+
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.dotContainer {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+
+
+
+
+
+
+#dot {
+    position: absolute;
+    bottom: 15px;
+    color: #ffffff9d;
+
+    left: 150px;
+
+    font-size: 8px;
+    padding: 8px;
+    border-radius: 50%;
+
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+#checkText {
+    font-size: 20px;
+    white-space: normal;
     word-break: break-word;
-    }
-    
-    .firstRow , .SecondRow , .ThirdRow{
-        display: flex;
-        flex-wrap: wrap;
-    }
-    .sixthRow{
-        margin-inline-start: 150px;
-    }
- 
-    
+}
 
-@media (max-width:481px){
-    .firstSection{
-        display: flex;
-        flex-direction: column;
-    }
-    .card{
-        width:100%;
-    }
-    .secondSection {
-        width:100%;
-        margin-top: 50px;
-    }
-   
-    
-   input{
-        width:100%;
-    }
-   
-       #optionCount{
-        width:100%;
-    }
-    .fourthRow input{
-        width:100%;
-    }
-   .fifthRow .d-flex {
-    text-align: right;
+.firstRow,
+.SecondRow,
+.ThirdRow {
+    display: flex;
     flex-wrap: wrap;
 }
-   #checkText{
-    font-size: 20px;
-    
-   }
-   .sixthRow{
-    margin-left: 0;
-    margin-right: 0;
-   }
-   
- 
 
+.sixthRow {
+    margin-left: 150px;
 }
-@media (max-width:867px) and (min-width:481px){
-    .secondSection{
-        width:100%;
-    }
-      .firstSection{
+
+
+
+@media (max-width:481px) {
+    .firstSection {
         display: flex;
         flex-direction: column;
-        gap:40px;
     }
-}
-/* iPad Portrait & Landscape (768px - 1024px) */
-@media (min-width: 768px) and (max-width: 1366px) {
 
     .card {
-        width: 90%;
+        width: 100%;
+    }
+
+    .secondSection {
+        width: 100%;
+
+    }
+
+
+    input {
+        width: 100%;
+    }
+
+    #optionCount {
+        width: 100%;
+    }
+
+    .fourthRow input {
+        width: 100%;
     }
 
     #checkText {
-        font-size: 18px;
+        font-size: 20px;
+
     }
 
-    .sixthRow .col-md-6 {
-        justify-content: flex-start !important;
-        display: flex;
+    .sixthRow {
+
+        margin-right: 100px;
     }
 
-    .likeChecked {
-        width: 22px;
-        height: 22px;
-    }
 
-    .sixthRow .row {
-        gap: 10px;
-    }
+
+
 }
 
+@media (max-width:867px) {
+    .card {
+        width: 100%;
+    }
 
+    .firstSection {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
+
+
+    .thirdSection {
+        width: 100%;
+    }
+
+}
+
+/* iPad Portrait & Landscape (768px - 1024px) */
+@media (max-width:1024px) {
+    .card {
+        width: 100%;
+    }
+
+    .thirdSection .d-flex {
+        width: 100%;
+        flex-wrap: wrap;
+    }
+
+    .sixthRow {
+        margin-left: 10px;
+        margin-right: 0px;
+    }
+
+    .fifthRow .d-flex {
+        width: 100%;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+
+
+
+}
